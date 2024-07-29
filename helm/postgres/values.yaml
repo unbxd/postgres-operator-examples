@@ -176,6 +176,8 @@ postgresVersion: 16
 # backupsSize sets the storage size of the backups to a volume in Kubernetes.
 # can be overridden by "pgBackRestConfig", if set. Defaults to the value below.
 # backupsSize: 1Gi
+repo1RetentionFull: 5
+repo1RetentionFullType: time
 
 # backupsStorageClassName sets the storage class to a class existing in Kubernetes.
 # Defaults to the "default" storage class defined in the cluster.

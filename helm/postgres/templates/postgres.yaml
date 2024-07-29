@@ -116,6 +116,9 @@ spec:
         azure:
           container: {{ .Values.azure.container | quote }}
       {{- else }}
+      global:
+        repo1-retention-full: {{ .Values.repo1RetentionFull | quote }}
+        repo1-retention-full-type: {{ .Values.repo1RetentionFullType | quote }}
       repos:
       - name: repo1
         volume:
