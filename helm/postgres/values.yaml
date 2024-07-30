@@ -178,7 +178,7 @@ postgresVersion: 16
 # backupsSize: 1Gi
 repo1RetentionFull: 5
 repo1RetentionFullType: time
-
+repo1Schedule: "0 14 * * 3"
 # backupsStorageClassName sets the storage class to a class existing in Kubernetes.
 # Defaults to the "default" storage class defined in the cluster.
 # Can be overridden by "pgBackRestConfig", if set.

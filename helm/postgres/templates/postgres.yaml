@@ -121,6 +121,8 @@ spec:
         repo1-retention-full-type: {{ .Values.repo1RetentionFullType | quote }}
       repos:
       - name: repo1
+        schedules:
+          full: {{ .Values.repo1Schedule | quote }}
         volume:
           volumeClaimSpec:
             {{- if .Values.backupsStorageClassName }}
